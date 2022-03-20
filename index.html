@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>todo list</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <h1>todo list</h1>
+    <form id="formList" onsubmit="save(this);return false" accept-charset="utf-8">
+      <input required type="text" name="todoInput" id="todoInput" value=""  placeholder="write your todo list and then enter."/>
+      
+    </form>
+    <div id="todo"></div>
+    <div class="footer">
+      <p>&copy; <y></y> build with <i class="fa fa-heart"></i> <a href="//github.com/fiandev/">FianDev</a></p>
+    </div>
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

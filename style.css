@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: .3s;
+}
+body {
+  margin: 10px;
+  margin-bottom: 0;
+  background-color: #bd5dff;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
+h1 {
+  font-size: 1.2rem;
+  width: 100%;
+  color: #fff;
+  padding: 5px;
+}
+#todo {
+  min-height: 70vh;
+}
+#todoInput {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 1px;
+  outline: none;
+  margin-bottom: 2vh;
+  background-color: #64a0fe;
+  color: #fff;
+  box-shadow: 0px 3px 5px 0px #000;
+}
+#todoInput::placeholder {
+  color: #004892;
+}
+#todoInput:-ms-input-placeholder {
+  color: #004892;
+}
+#todoInput::-ms-input-placeholder {
+  color: #004892;
+}
+#todoInput:focus {
+  box-shadow: -5px 5px 5px 0px #000;
+  background-color: #fff;
+  color: #000;
+}
+.list {
+  transition: .6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004892;
+  padding: 10px;
+  border: solid 1px #15ffe1;
+  box-shadow: -5px 10px 5px 0px #000;
+  margin: 15px 0;
+  animation: spawn 1s;
+}
+.clearAllBtn {
+  border: solid 1px #15ffe1;
+  box-shadow: -5px 10px 5px 0px #000;
+  padding: 10px 20px;
+  outline: none;
+  background-color: #64a0fe;
+  color: #fff;
+}
+.clearAllBtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+@keyframes spawn{
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes dispawn{
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.list.done {
+  /* none */
+}
+.list.done input {
+width: 90%;
+}
+.list input {
+  width: 70%;
+  display: inline-block;
+  background: none;
+  border: none;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+.list input:focus {
+  
+}
+.list span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(10% - 2%);
+  margin: 0 1%;
+  font-size: 1rem;
+  padding: 5px;
+}
+.list span.doneBtn {
+  background-color: #00bd15;
+  color: #fff;
+}
+.list span.wbtn {
+  background-color: #f1ff0e;
+  color: #000;
+}
+.list span.dbtn {
+  background-color: #ff2525;
+  color: #fff;
+}
+.list span:hover {
+  background-color: #fff;
+  color: #000;
+}
+.list span.doneCheck {
+  color: #00bd15;
+  font-size: 1rem;
+}
+.list span.doneCheck:hover {
+  background: none;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 5px 0;
+  color: #fff;
+  border-radius: 20px 0px 20px 0px;
+  margin: 5px 0;
+}
+.footer i {
+  color: #ff0000;
+}
